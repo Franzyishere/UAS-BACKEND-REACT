@@ -1,0 +1,44 @@
+/* Add your global styles here */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .table-container {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  .table-caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .table-container th, .table-container td {
+    border: 1px solid #3752aa;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table-container th {
+    background-color: #4596c5;
+  }
+  
+  .custom-button {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-right: 8px;
+    background-color: #0088cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Add your other styles here */

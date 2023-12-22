@@ -1,0 +1,74 @@
+/* Navbar Container */
+.navbar-container {
+  background-color: #0f3460;
+  padding: 10px 5%;
+  color: #fff;
+}
+
+/* Navbar Content */
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation Links for Mobile */
+.nav-links-mobile {
+  display: none;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1100;
+}
+
+.nav-links-mobile a {
+  display: block;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.nav-links-mobile a:hover {
+  background-color: #f6f6f6;
+}
+
+/* Adjustments for mobile responsiveness */
+@media screen and (max-width: 768px) {
+
+  /* Navbar Container */
+  .navbar-container {
+    padding: 10px 3%;
+  }
+
+  /* Navbar Content */
+  .navbar-content {
+    flex-direction: column;
+  }
+
+  /* Display mobile navigation toggle button */
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  /* Style for close/open buttons (if you have them) */
+  .close,
+  .open {
+    top: 15px;
+    right: 15px;
+  }
+
+  /* Show mobile navigation links */
+  .mobile-nav-active .nav-links-mobile {
+    display: block;
+  }
+
+  /* Adjust font size for mobile navigation links */
+  .nav-links-mobile a {
+    font-size: 14px;
+  }
+}

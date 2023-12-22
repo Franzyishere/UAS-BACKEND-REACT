@@ -1,0 +1,218 @@
+/* style.css */
+
+/* Container untuk Cart Items */
+.cart-items {
+  background: #f6f9fc;
+  padding: 50px 0;
+}
+
+.cart-items .cart-details {
+  width: 70%;
+}
+
+.cart-items .cart-total {
+  width: 30%;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 130px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-list {
+  background: white;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.cart-items .img {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.cart-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart-items .cart-details h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #333;
+}
+
+.cart-items .cart-details h4 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 50px;
+  color: grey;
+}
+
+.cart-items h4 span {
+  color: #e94560;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.removeCart {
+  background: none;
+  font-size: 25px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.cartControl {
+  margin-top: 50px;
+}
+
+.cartControl button {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #e94560;
+  transition: background 0.3s ease-in-out;
+}
+
+.cartControl button:hover {
+  background: #f6f9fc;
+}
+
+/* Total Harga di Cart Summary */
+.cart-total h4 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cart-total h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #e94560;
+}
+
+.cart-total h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  color: #e94560;
+}
+
+.no-items {
+  color: #e94560;
+  font-size: 18px;
+  margin-top: 30px;
+  height: 130px;
+}
+
+/* Tombol Checkout di Cart Summary */
+.checkoutButton {
+  background-color: #e94560;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.checkoutButton:hover {
+  background-color: #333;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+  .cart-items .cart-details {
+    width: 100%;
+  }
+
+  .cart-items .cart-total {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .cart-list {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .cart-items .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cart-items .cart-details h3 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .cart-items .cart-details h4 {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  .cart-items h4 span {
+    margin-left: 10px;
+  }
+
+  .removeCart {
+    margin-right: 5px;
+  }
+
+  .cartControl {
+    margin-top: 20px;
+  }
+
+  .cartControl button {
+    width: 35px;
+    height: 35px;
+    margin: 8px;
+  }
+
+  .cart-total h4 {
+    font-size: 14px;
+  }
+
+  .cart-total h3 {
+    font-size: 18px;
+  }
+
+  .cart-total h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .no-items {
+    font-size: 16px;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  /* ... (CSS untuk responsivitas lainnya) ... */
+
+  .checkoutButton {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}

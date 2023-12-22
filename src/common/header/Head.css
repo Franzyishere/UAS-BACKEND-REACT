@@ -1,0 +1,13 @@
+/* head.css */
+
+@media screen and (max-width: 768px) {
+  .container.d_flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left.row,
+  .right.row {
+    margin-bottom: 10px;
+  }
+}

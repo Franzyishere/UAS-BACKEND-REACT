@@ -1,0 +1,72 @@
+.homeContainer {
+  padding: 100px; /* Add padding as needed */
+}
+
+.header_slider{
+  align-items: center;
+  flex-direction: row;
+}
+
+.homeSlide {
+  display: flex;
+  align-items: center;
+  height: 80vh; /* Adjust the height as needed */
+}
+
+.homeSlide .text-container {
+  text-align: center;
+  flex: 1;
+  
+}
+
+.homeSlide h1 {
+  font-size: 40px; /* Adjust as needed */
+  line-height: 45px; /* Adjust as needed */
+  margin-bottom: 15px; /* Adjust as needed */
+  color: #333; /* Change color as needed */
+}
+
+.homeSlide p {
+  margin-bottom: 20px; /* Adjust as needed */
+  color: #555; /* Change color as needed */
+}
+
+.homeSlide img {
+  width: auto; /* Set width to auto to maintain the aspect ratio */
+  max-height: 400px; /* Adjust the maximum height as needed */
+}
+
+.homeSlide ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.homeSlide ul li {
+  border: 2px solid #0f3460; /* Change border color as needed */
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #fff; /* Change background color as needed */
+}
+
+.homeSlide ul li button {
+  background: #0f3460;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.homeSlide ul li button::before {
+  font-size: 15px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 412px) {
+  .header_slider{
+    align-items: center;
+    flex-direction: column-reverse;
+  } 
+}

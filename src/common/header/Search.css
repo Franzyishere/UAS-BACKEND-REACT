@@ -1,0 +1,24 @@
+/* Search.css */
+
+@media screen and (max-width: 768px) {
+  .container.c_flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo.width {
+    margin-bottom: 20px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .search-box span {
+    width: 100%;
+  }
+}

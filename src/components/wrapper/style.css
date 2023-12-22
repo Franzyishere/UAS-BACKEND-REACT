@@ -1,0 +1,66 @@
+.wrapper {
+  text-align: center;
+}
+
+.wrapper .img {
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.wrapper .img img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .img i {
+  font-size: 25px;
+}
+
+.wrapper .product {
+  padding: 20px;
+}
+
+.wrapper .product h3 {
+  font-weight: 500;
+}
+
+.wrapper p {
+  font-size: 15px;
+  margin-top: 20px;
+  color: grey;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .wrapper .container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper .container {
+    width: 60%;
+  }
+}
+
+/* Button Styling */
+.riwayat-button {
+  margin-top: 40px; /* Adjusted margin-top for more spacing */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e94560;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* Added margin for spacing below */
+}
+
+.riwayat-button:hover {
+  background-color: #e94560;
+}
