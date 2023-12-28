@@ -16,6 +16,7 @@ import User from './components/riwayat/User';
 import AddUser from './components/riwayat/AddUser';
 import CategoryPage from './components/Category/CategoryPage';
 import SdataCategory from './components/Category/Sdata';
+import Update from './common/Cart/update';
 
 function App() {
   const { productItems } = Data;
@@ -111,6 +112,7 @@ function App() {
             element={isLoggedIn ? <Navigate to="/" /> : <SignUp onSignup={handleSignup} />}
           />
           <Route path="/category" element={<CategoryPage addToCart={addToCart} shopItems={SdataCategory.shopItems} />} />
+          <Route path="/transaksi/update/:id" element={<Update />} />
         </Routes>
         {!excludeFooterRoutes.includes(window.location.pathname) && <Footer />}
       </Router>

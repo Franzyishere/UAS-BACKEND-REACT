@@ -10,6 +10,7 @@ const Transaksi = () => {
     no_tlp: '',
     alamat: '',
     metode_pembayaran: '',
+    created_at: '',
   });
 
   const [transactions, setTransactions] = useState([]);
@@ -52,6 +53,7 @@ const Transaksi = () => {
           no_tlp: '',
           alamat: '',
           metode_pembayaran: '',
+          created_at: '',
         });
 
         // Fetch updated transactions after submission
@@ -65,23 +67,23 @@ const Transaksi = () => {
     }
   };
 
-  // const handleDelete = async (id_transaksi) => {
-  //   try {
-  //     const response = await axios.delete(`http://localhost:8080/delete-transaksi${id_transaksi}`);
-  //     console.log(response.data);
+  const handleDelete = async (id_transaksi) => {
+    try {
+      const response = await axios.delete(`http://localhost:8080/delete-transaksi/${id_transaksi}`);
+      console.log(response.data);
 
-  //     if (response.data.status === 200) {
-  //       alert('Transaction deleted successfully');
-  //       // Fetch updated transactions after deletion
-  //       fetchTransactions();
-  //     } else {
-  //       alert('Error deleting transaction: ' + response.data.messages.success);
-  //     }
-  //   } catch (error) {
-  //     console.error(error);
-  //     alert('Error deleting transaction');
-  //   }
-  // };
+      if (response.data.status === 200) {
+        alert('Transaksi Berhasil di Hapus');
+        // Fetch updated transactions after deletion
+        fetchTransactions();
+      } else {
+        alert('Gagal Menghapus Transaksi: ' + response.data.messages.success);
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Error deleting transaction');
+    }
+  };
 
   return (
     <div>
